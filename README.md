@@ -3,6 +3,8 @@ Metrics
 
 This package contains metrics (statsd) dependency and Guice annotation to use with Guice DI
 
+Before any start, the easiest way to use metrics - it's via the singleton: ``MetricFactory.getMetricStore()``
+
 ### Why
 
 1. Because we can
