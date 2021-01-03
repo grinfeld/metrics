@@ -342,3 +342,4 @@ public class Some {
     }
 }
 ```
+* Remeber: lamdas in Java doesn;t support checked exceptions :)
