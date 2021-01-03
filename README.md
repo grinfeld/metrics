@@ -92,7 +92,7 @@ bind(SomeInterface.class).to(SomeClass.class);
 
 bind(SomeClass.class);
 ```
-* and it DOESN'T work for `@Provides` method and binding via existed instance `bind(SomeInterface.class).toInstance(new SomeClass());` - use instead `MetricFactory.getMetricStore()` inside your code
+* and it DOESN'T work for `@Provides` method and binding via existed instance `bind(SomeInterface.class).toInstance(new SomeClass());` - in such case use  `MetricFactory.getMetricStore()` inside your code -> annotations won't work
   
 * Note: spring and dropwizard for example have their own annotations for metrics, so no need to implement any annotation
 
